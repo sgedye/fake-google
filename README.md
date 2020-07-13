@@ -1,3 +1,9 @@
+# This is Fake Google
+
+This has been created for educational purposes only and does not represent Google in any way shape or form.
+
+</hr>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
