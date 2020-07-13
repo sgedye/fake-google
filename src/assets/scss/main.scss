@@ -14,12 +14,14 @@
 .google-search {
   display: flex;
   flex-direction: row;
+  width: calc(95vw);
+  max-width: 736px;
   input {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     height: 40px;
-    width: calc(100vw - 100px);
+    width: calc(100% - 42px);
     border-top: 1px solid #e2e2e2;
     border-bottom: 1px solid #e2e2e2;
     border-left: 1px solid #e2e2e2;
@@ -47,13 +49,100 @@
     border-radius: 0 20px 20px 0;
     padding: 0;
     height: 40px;
-    width: 40px;
+    width: 42px;
     // height: 30px;
     svg {
       padding-top: 4px;
       width: 24px;
       height: 24px;
       fill: white;
+    }
+  }
+}
+
+.desktop-search { display: none; }
+.desktop-buttons { display: none; }
+
+@media screen and (min-width: 768px) {
+  .main {
+    margin-top: 136px;
+  }
+  .google-img {
+    width: 272px;
+  }
+  .speak-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    margin-top: 112px;
+  }
+  .google-search { display: none; }
+  .desktop-search {
+    display: flex;
+    flex-direction: row;
+    width: 584px;
+    height: 46px;
+    border-radius: 30px;
+    &:hover {
+      box-shadow: 0px 2px 8px #ccc;
+    }
+    input {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      height: 46px;
+      width: calc(100% - 90px);
+      border: 1px solid #e2e2e2;
+      border-left: none;
+      border-right: none;
+    }
+    .speak-btn, .search-btn {
+      height: 46px;
+      width: 46px;
+      background-color: white;
+      border: 1px solid #e2e2e2;
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .speak-btn {
+      display: block;
+      padding-right: 15px;
+      border-left: none;
+      border-radius: 0 30px 30px 0;
+    }
+    .search-btn {
+      padding-left: 15px;
+      border-right: none;
+      border-radius: 30px 0 0 30px;
+      svg {
+        fill: #757575;
+      }
+    }
+  }
+  .desktop-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px 0;
+    button {
+      box-sizing: border-box;
+      font-size: 14px;
+      color: #757575;
+      background-color: #eee;
+      border: none;
+      border-radius: 5px;
+      margin: 0 5px;
+      padding: 10px 20px;
+      &:hover {
+        // border: 1px solid #757575;
+        box-shadow: 0px 0px 1px 1px #aaa;
+        cursor: pointer;
+      }
     }
   }
 }
