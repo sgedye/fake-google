@@ -18,14 +18,14 @@ const Footer = () => {
       </div>
       <div className="desktop-divs">
         <div>
-          <p>Advertising</p>
-          <p>Business</p>
-          <p>How Search Works</p>
+          <a href="/">Advertising</a>
+          <a href="/">Business</a>
+          <a href="/">How Search Works</a>
         </div>
         <div>
-          <p>Privacy</p>
-          <p>Terms</p>
-          <p>Settings</p>
+          <a href="/">Privacy</a>
+          <a href="/">Terms</a>
+          <a href="/">Settings</a>
         </div>
       </div>
     </footer>
