@@ -13,7 +13,7 @@ const Header = () => {
         <p>IMAGES</p>
       </div>
       <div className="header-signin">
-        <a href="/" className="box-icon"> </a>
+        <a href="/" roll="button" className="box-icon"> </a>
         <button className="btn">Sign In</button>
       </div>
     </section>

@@ -1,7 +1,6 @@
 $header-grey: '#757575';
 
 .header {
-  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -30,11 +29,12 @@ $header-grey: '#757575';
   align-items: center;
   p {
     // color: #757575;
+    font-size: 12px;
+    line-height: 48px;
     font-weight: 600;
-    padding: 14px 10px;
+    padding: 0px 10px;
     &.active {
       color: blue;
-      padding-bottom: 12px;
       border-bottom: 2px solid blue;
     }
   }
@@ -49,16 +49,17 @@ $header-grey: '#757575';
     right: 10px;
   }
   .box-icon {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     color: $header-grey;
-    margin-right: 10px;
     background: url('../images/google-sprite.png');
-    background-position: 778px -90px;
+    background-position: 869px -100px;
+    background-size: 500px;
   }
   .btn {
-    padding: 5px;
-    // display: none;
+    padding: 0px 12px;
+    line-height: 28px;
+    font-size: 13px;
     color: $header-grey;
   }
 }
